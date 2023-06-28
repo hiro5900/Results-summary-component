@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+
+html {
+     font-size: 18px;
+}
+
+body {
+     display: grid;
+     justify-items: center;
+     align-items: center;
+     min-height: 100vh;
+     font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Container */
+.container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 650px;
+     height: 440px;
+     box-shadow: 3px 13px 20px 6px rgb(237 238 249);
+     border-radius: 26px;
+}
+
+
+/* Result section */
+.result {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     background: linear-gradient(hsl(252, 100%, 63%), hsl(241, 81%, 55%));
+     text-align: center;
+     width: 325px;
+     height: 440px;
+     align-items: center;
+     border-radius: 26px;
+}
+
+.result-heading {
+     color: hsl(241, 100%, 89%);
+     margin: 0px 0 40px 0;
+}
+
+.score {
+     background: linear-gradient(hsla(254, 72%, 45%, 1), hsla(241, 72%, 46%, 0));
+     width: 165px;
+     height: 165px;
+     border-radius: 82.5px;
+     margin: -11px 0 0 0;
+}
+
+.out-of {
+     color: hsl(241deg 100% 89% / 70%);
+     margin: 0;
+     padding: 0;
+     font-size: 0.8rem;
+}
+
+h1 {
+     color: hsl(0, 0%, 100%);
+     font-size: 3.3rem;
+     margin: 32px 0 -5px 0;
+}
+
+h2 {
+     color: hsl(0, 0%, 100%);
+}
+
+.test-desc {
+     color: hsl(241, 100%, 89%);
+     font-size: 0.9rem;
+     padding: 0 70px 0 70px;
+     margin: -5px -20px 19px -20px;
+     font-weight: 500;
+}
+
+
+/* Summary section */
+
+.summary {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;
+     background-color: hsl(0, 0%, 100%);
+     width: 325px;
+     height: 440px;
+     color: hsl(224, 30%, 27%);
+     border-radius: 26px;
+}
+
+.summary-heading {
+     margin: 32px 0 0 -159px;
+     font-weight: 800;
+}
+
+ul {
+     list-style-type: none;
+     padding: 0;
+}
+
+li {
+     margin: 18px 38px;
+     padding: 10px;
+     font-weight: 500;
+     border-radius: 8px;
+}
+
+/* Reaction */
+
+.reaction {
+     background-color: hsl(0, 100%, 67%, 0.1);
+     color: hsl(0, 100%, 67%);
+     font-weight: 600;
+}
+
+.reaction svg {
+     margin: 0 0 -3px -116px;
+}
+
+.reaction #r {
+     margin: 0 0 0 7px;
+}
+
+.reaction .r-numoutof100 {
+     margin: 0 0 0 60px;
+}
+
+.reaction .outof100 {
+     margin: 0 -116px 0 0px;
+}
+
+/* Memory */
+
+.memory {
+     background-color: hsl(39, 100%, 56%, 0.1);
+     color: hsl(39, 100%, 56%);
+     font-weight: 600;
+}
+
+.memory svg {
+     margin: 0 0 -3px -116px;
+}
+
+.memory #m {
+     margin: 0 0 0 7px;
+}
+
+.memory .m-numoutof100 {
+     margin: 0 0 0 60px;
+}
+
+.memory .outof100 {
+     margin: 0 -116px 0 0px;
+}
+
+/* Verbal */
+
+.verbal {
+     background-color: hsl(166, 100%, 37%, 0.1);
+     color: hsl(166, 100%, 37%);
+     font-weight: 600;
+}
+
+.verbal svg {
+     margin: 0 0 -3px -116px;
+}
+
+.verbal #vrbl {
+     margin: 0 0 0 7px;
+}
+
+.verbal .vrbl-numoutof100 {
+     margin: 0 0 0 73px;
+}
+
+.verbal .outof100 {
+     margin: 0 -116px 0 0px;
+}
+
+/* Visual */
+
+.visual {
+     background-color: hsl(234, 85%, 45%, 0.1);
+     color: hsl(234, 85%, 45%);
+     font-weight: 600;
+}
+
+.visual svg {
+     margin: 0 0 -3px -116px;
+}
+
+.visual #vis {
+     margin: 0 0 0 7px;
+}
+
+.visual .vis-numoutof100 {
+     margin: 0 0 0 74px;
+}
+
+.visual .outof100 {
+     margin: 0 -116px 0 0px;
+}
+
+/* Button */
+
+.btn {
+     background-color: hsl(224, 30%, 27%);
+     color: hsl(0, 0%, 100%);
+     padding: 10px;
+     width: 249px;
+     border-radius: 23px;
+     margin: 15px 0 50px 0;
+     height: 46px;
+     font-size: 0.9rem;
+     cursor: pointer;
+}
+
+.btn:hover {
+     background: linear-gradient(hsl(252, 100%, 63%), hsl(241, 81%, 55%));
+}
+
+@media (min-width: 400px) and (max-width: 500px){
+     body{
+          width: fit-content;
+          height: fit-content;
+     }
+     .container{
+          display: flex;
+          flex-direction: column;
+          box-shadow: none;
+          width: 100vw;
+          height: 100vh;
+     }
+     
+}
